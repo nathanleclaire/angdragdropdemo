@@ -1,0 +1,41 @@
+/* CSS goes here */
+
+html {
+	height: 100%;
+}
+
+body {
+	height : 100%;
+}
+
+h1 {
+	font-size: 100px;
+	margin: 0px;
+}
+
+p {
+	margin-left: 10px;
+}
+
+#overlay {
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    z-index: 5000;
+}
+
+.dot-flasher {
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 5001;
+}
+
+img {
+	max-height: 200px;
+}

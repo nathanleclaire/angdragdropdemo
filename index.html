@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="plunker" ng-controller="MainCtrl">
+ 
+  <head>
+    <title></title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.1/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body image-drag-drop-upload>
+    <h1>
+    <dot-flasher class="dot-flasher" ng-show="darkBody" display-text="Drop some images here!!!" flash-char="!" flash-interval="100"></dot-flasher>
+    </h1>
+	<p>You can drag and drop some images here.</p>
+	<div ng-repeat="img in imgSrcs track by $index">
+		<img ng-src="{{img}}">	
+	</div>
+    <div id="overlay" class="my-show-hide-animation" ng-show="darkBody"></div>
+  </body>
+
+</html>
